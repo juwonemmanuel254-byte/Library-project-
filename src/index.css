@@ -193,3 +193,31 @@ input, select, textarea { font-family: 'Arial', sans-serif; font-size: 15px; }
   body { font-size: 15px; }
   .btn { padding: 9px 16px; font-size: 14px; }
 }
+
+/* ── Mobile font size reductions ── */
+@media (max-width: 768px) {
+  body            { font-size: 15px; }
+  h1              { font-size: 1.6rem !important; }
+  h2              { font-size: 1.3rem !important; }
+  h3              { font-size: 1rem !important; }
+  .btn            { font-size: 13px; padding: 9px 16px; }
+  .form-group label { font-size: 13px; }
+  .form-group input,
+  .form-group select,
+  .form-group textarea { font-size: 14px; padding: 9px 12px; }
+  .badge          { font-size: 11px; }
+}
+
+@media (max-width: 480px) {
+  body            { font-size: 14px; }
+  h1              { font-size: 1.4rem !important; }
+  h2              { font-size: 1.2rem !important; }
+  h3              { font-size: 0.95rem !important; }
+  .btn            { font-size: 13px; padding: 8px 14px; }
+  .section-header h2 { font-size: 1.3rem !important; }
+  .section-header p  { font-size: 0.9rem; }
+  .modal-header h3   { font-size: 1rem; }
+  .modal-body        { padding: 16px; }
+  .modal-footer      { padding: 12px 16px; }
+  .container         { padding: 0 12px; }
+}

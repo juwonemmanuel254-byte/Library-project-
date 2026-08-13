@@ -1,6 +1,7 @@
 .member-auth-page {
   min-height: 100vh;
   display: flex;
+  overflow: hidden;
 }
 
 /* ── Left panel ─────────────────────────────────────── */
@@ -122,11 +123,12 @@
   width: 540px;
   flex-shrink: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 48px 44px;
+  padding: 40px 44px 48px;
   background: var(--bg);
   overflow-y: auto;
+  max-height: 100vh;
 }
 
 .member-auth-card {
