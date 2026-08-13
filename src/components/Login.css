@@ -146,3 +146,23 @@
   .login-right { width: 100%; padding: 40px 24px; }
   .login-branding h1 { font-size: 2rem; }
 }
+
+/* ── Login mobile ── */
+@media (max-width: 900px) {
+  .login-left { padding: 48px 32px; }
+  .login-right { width: 420px; padding: 40px 28px; }
+}
+
+@media (max-width: 768px) {
+  .login-page { flex-direction: column; }
+  .login-left { padding: 36px 24px; }
+  .login-right { width: 100%; padding: 36px 24px; }
+  .login-branding h1 { font-size: 2rem; }
+}
+
+@media (max-width: 480px) {
+  .login-left { padding: 28px 16px; }
+  .login-right { padding: 28px 16px; }
+  .login-branding h1 { font-size: 1.6rem; }
+  .login-submit { font-size: 15px; padding: 12px; }
+}

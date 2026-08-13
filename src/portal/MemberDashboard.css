@@ -124,3 +124,22 @@
   .member-header { flex-wrap: wrap; height: auto; padding: 12px 16px; gap: 8px; }
   .member-header-user .member-user-info { display: none; }
 }
+
+/* ── MemberDashboard extra mobile ── */
+@media (max-width: 768px) {
+  .member-header    { flex-wrap: wrap; height: auto; padding: 10px 16px; gap: 8px; }
+  .member-nav       { order: 3; width: 100%; justify-content: flex-start; gap: 4px; }
+  .member-nav-btn   { font-size: 13px; padding: 8px 10px; }
+  .member-header-user { margin-left: auto; }
+  .member-user-info { display: none; }
+  .member-welcome   { padding: 20px 0; }
+  .member-welcome h1 { font-size: 1.3rem; }
+  .member-main      { padding-top: 20px; }
+}
+
+@media (max-width: 480px) {
+  .member-header    { padding: 8px 12px; }
+  .member-header-brand span { font-size: 1rem; }
+  .member-nav-btn   { padding: 7px 8px; font-size: 12px; gap: 4px; }
+  .member-logout    { padding: 5px 10px; font-size: 12px; }
+}

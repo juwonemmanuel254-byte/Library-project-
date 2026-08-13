@@ -235,3 +235,24 @@
   .borrow-card-top { flex-direction: column; }
   .borrow-card-meta { flex-direction: column; gap: 8px; }
 }
+
+/* ── MyBorrows mobile ── */
+@media (max-width: 768px) {
+  .borrow-summary-cards { grid-template-columns: repeat(2, 1fr); }
+  .borrow-card          { flex-direction: column; gap: 12px; }
+  .borrow-card-top      { flex-direction: column; gap: 8px; }
+  .borrow-card-meta     { gap: 10px; }
+  .my-borrows-header h2 { font-size: 1.3rem; }
+}
+
+@media (max-width: 480px) {
+  .borrow-summary-cards { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .borrow-summary-card  { padding: 14px 12px; gap: 10px; }
+  .summary-value        { font-size: 1.4rem; }
+  .borrow-card          { padding: 14px 16px; }
+  .borrow-card-icon     { width: 44px; height: 44px; }
+  .borrow-filter-tabs   { overflow-x: auto; gap: 0; white-space: nowrap; }
+  .borrow-filter-tab    { padding: 10px 12px; font-size: 13px; }
+  .borrow-card-meta     { flex-direction: column; gap: 6px; }
+  .borrow-book-title    { font-size: 0.95rem; }
+}

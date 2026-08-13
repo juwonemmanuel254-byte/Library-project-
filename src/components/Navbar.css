@@ -183,3 +183,19 @@
 
   .hamburger { display: flex; }
 }
+
+/* ── Mobile navbar ── */
+@media (max-width: 900px) {
+  .navbar { flex-wrap: wrap; height: auto; padding: 12px 16px; gap: 8px; }
+  .navbar-links { display: none; flex-direction: column; width: 100%; padding: 8px 0; gap: 2px; }
+  .navbar-links.active { display: flex; }
+  .navbar-user { display: none; }
+  .hamburger { display: flex; }
+  .nav-btn { padding: 10px 12px; font-size: 15px; }
+}
+
+@media (max-width: 480px) {
+  .navbar { padding: 10px 12px; }
+  .navbar-title { font-size: 1rem; }
+  .navbar-subtitle { display: none; }
+}

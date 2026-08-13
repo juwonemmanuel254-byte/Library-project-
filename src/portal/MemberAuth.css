@@ -252,3 +252,16 @@
   .member-auth-left  { padding: 32px 20px; }
   .member-auth-right { padding: 28px 16px; }
 }
+
+/* ── MemberAuth extra mobile ── */
+@media (max-width: 480px) {
+  .member-auth-left  { padding: 24px 16px 20px; }
+  .member-auth-right { padding: 24px 16px 32px; }
+  .member-auth-left h1 { font-size: 1.5rem; }
+  .auth-features li  { font-size: 14px; }
+  .form-row          { grid-template-columns: 1fr; }
+  .auth-submit       { font-size: 14px; padding: 12px; }
+  .auth-tabs         { gap: 0; }
+  .auth-tab          { font-size: 13px; padding: 10px 6px; }
+  .auth-signin-btn   { width: 100%; justify-content: center; }
+}

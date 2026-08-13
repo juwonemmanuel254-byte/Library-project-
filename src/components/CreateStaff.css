@@ -304,3 +304,19 @@
   .create-staff-form { padding: 20px; }
   .create-staff-form-header { padding: 20px; }
 }
+
+/* ── CreateStaff extra mobile ── */
+@media (max-width: 768px) {
+  .create-staff-body { gap: 16px; }
+  .create-staff-form-header { padding: 20px; gap: 12px; }
+  .create-staff-form { padding: 20px; }
+  .create-staff-actions { flex-direction: column; }
+  .create-staff-actions .btn { width: 100%; justify-content: center; }
+}
+
+@media (max-width: 480px) {
+  .create-staff-form-header h3 { font-size: 1rem; }
+  .role-selector { grid-template-columns: 1fr; }
+  .role-option { padding: 14px 12px; }
+  .form-section-label { font-size: 10px; }
+}

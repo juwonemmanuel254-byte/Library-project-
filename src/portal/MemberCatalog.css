@@ -214,3 +214,24 @@
 }
 
 .filter-input:focus { outline: none; }
+
+/* ── MemberCatalog mobile ── */
+@media (max-width: 900px) {
+  .member-books-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+}
+
+@media (max-width: 768px) {
+  .member-books-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .member-filters    { gap: 8px; }
+  .member-filters select { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .member-books-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .member-catalog-header { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .member-catalog-header h2 { font-size: 1.3rem; }
+  .member-book-cover { height: 88px; }
+  .member-book-info  { padding: 10px; gap: 3px; }
+  .member-book-info h3 { font-size: 0.85rem; }
+  .borrow-btn { font-size: 12px; padding: 8px 10px; }
+}

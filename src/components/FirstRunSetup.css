@@ -233,3 +233,16 @@
   .setup-logo      { padding: 16px 20px; }
   .setup-welcome h1 { font-size: 1.4rem; }
 }
+
+/* ── FirstRunSetup tablet ── */
+@media (max-width: 600px) {
+  .setup-container { border-radius: 14px; }
+  .setup-logo { padding: 16px 20px; font-size: 1rem; }
+  .setup-welcome { padding: 28px 20px; }
+  .setup-welcome h1 { font-size: 1.4rem; }
+  .setup-form-wrap { padding: 24px 20px; }
+  .setup-welcome-icon { width: 72px; height: 72px; }
+  .setup-start-btn { width: 100%; justify-content: center; }
+  .setup-submit { font-size: 14px; }
+  .form-row { grid-template-columns: 1fr; }
+}
