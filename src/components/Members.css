@@ -1,0 +1,64 @@
+.members-page { flex: 1; padding-bottom: 64px; }
+
+.members-table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 24px;
+}
+
+.members-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}
+
+.members-table th {
+  background: var(--primary);
+  color: #fff;
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+}
+
+.members-table td {
+  padding: 13px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  vertical-align: middle;
+}
+
+.members-table tbody tr:last-child td { border-bottom: none; }
+
+.members-table tbody tr {
+  transition: background 0.15s;
+  animation: fadeInUp 0.4s cubic-bezier(0.22,1,0.36,1) both;
+}
+
+.members-table tbody tr:nth-child(1)  { animation-delay: 0.05s; }
+.members-table tbody tr:nth-child(2)  { animation-delay: 0.10s; }
+.members-table tbody tr:nth-child(3)  { animation-delay: 0.15s; }
+.members-table tbody tr:nth-child(4)  { animation-delay: 0.20s; }
+.members-table tbody tr:nth-child(5)  { animation-delay: 0.25s; }
+.members-table tbody tr:nth-child(6)  { animation-delay: 0.30s; }
+.members-table tbody tr:nth-child(7)  { animation-delay: 0.35s; }
+.members-table tbody tr:nth-child(8)  { animation-delay: 0.40s; }
+
+.members-table tbody tr:hover { background: #f5f3ef; }
+
+.member-id {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 12px;
+  color: var(--primary);
+}
+
+.center { text-align: center; }

@@ -1,0 +1,40 @@
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  animation: fadeInUp 0.45s cubic-bezier(0.22,1,0.36,1) both;
+}
+
+.app-loading {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: var(--text-muted);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Small bar shown at the bottom of landing page for librarians */
+.librarian-access-bar {
+  background: var(--primary);
+  padding: 10px;
+  text-align: center;
+}
+
+.librarian-access-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.5);
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+.librarian-access-btn:hover {
+  color: rgba(255,255,255,0.85);
+}

@@ -1,0 +1,306 @@
+.create-staff-page { flex: 1; padding-bottom: 64px; }
+
+/* Two-column layout: form left, sidebar right */
+.create-staff-body {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  grid-template-rows: auto auto;
+  gap: 24px;
+  align-items: start;
+  padding-top: 4px;
+}
+
+/* Form card spans left column both rows */
+.create-staff-form-card {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Card header banner */
+.create-staff-form-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 28px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: #fff;
+}
+
+.create-staff-form-header .material-icons {
+  font-size: 32px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.create-staff-form-header h3 {
+  font-size: 1.15rem;
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.create-staff-form-header p {
+  color: rgba(255,255,255,0.75);
+  font-size: 13px;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+/* Form body */
+.create-staff-form {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Section labels inside the form */
+.form-section-label {
+  font-size: 11px;
+  font-weight: 700;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 16px 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.form-section-label:first-child { margin-top: 0; }
+
+/* Role selector */
+.role-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.role-option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 18px 16px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all 0.2s;
+  background: var(--bg);
+  position: relative;
+}
+
+.role-option input[type="radio"] { display: none; }
+
+/* Selection indicator dot */
+.role-option::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background: #fff;
+  transition: all 0.2s;
+}
+
+.role-option.selected::before {
+  border-color: var(--primary);
+  background: var(--primary);
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.role-option .material-icons {
+  font-size: 28px;
+  color: var(--text-muted);
+}
+
+.role-option > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.role-option strong {
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.role-option span {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+}
+
+.role-option:hover {
+  border-color: var(--primary-light);
+  background: #f8fbff;
+}
+
+.role-option.selected {
+  border-color: var(--primary);
+  background: #eff6ff;
+}
+
+.role-option.selected .material-icons { color: var(--primary); }
+.role-option.selected strong          { color: var(--primary); }
+
+/* Form actions */
+.create-staff-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+/* ── Right sidebar ──────────────────────────────────── */
+
+/* Info box */
+.staff-info-box {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.staff-info-box-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.staff-info-box-icon .material-icons { font-size: 22px; }
+
+.staff-info-box strong {
+  display: block;
+  color: #1d4ed8;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.staff-info-box p {
+  color: #1e40af;
+  font-size: 13px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Created accounts list */
+.created-accounts {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 20px;
+}
+
+.created-accounts h3 {
+  font-size: 14px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--success);
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.created-accounts h3 .material-icons { font-size: 18px; }
+
+.created-list { display: flex; flex-direction: column; gap: 10px; }
+
+.created-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 12px;
+  background: var(--bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.created-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.created-avatar .material-icons { font-size: 18px; }
+
+.created-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.created-info strong {
+  font-size: 13px;
+  font-family: 'Arial', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.created-info span {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-family: 'Arial', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Access denied */
+.access-denied {
+  text-align: center;
+  padding: 80px 24px;
+  color: var(--text-muted);
+}
+
+.access-denied .material-icons { color: var(--danger); display: block; margin: 0 auto 16px; }
+.access-denied h2 { color: var(--danger); margin-bottom: 8px; }
+
+/* ── Responsive ─────────────────────────────────────── */
+@media (max-width: 900px) {
+  .create-staff-body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .create-staff-form-card { grid-column: 1; grid-row: 1; }
+  .staff-info-box          { grid-column: 1; grid-row: 2; }
+  .created-accounts        { grid-column: 1; grid-row: 3; }
+  .role-selector           { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .create-staff-form { padding: 20px; }
+  .create-staff-form-header { padding: 20px; }
+}
