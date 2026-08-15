@@ -1,6 +1,5 @@
-// API base URL — uses VITE_API_URL env var in production (set on Vercel)
-// Falls back to localhost for local development only
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+// API base URL — production uses Render backend, local dev uses localhost
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://library-project-6kk8.onrender.com/api'
 
 const getHeaders = () => {
   const token = localStorage.getItem('lms_token')
