@@ -1,3 +1,5 @@
+// API base URL — uses VITE_API_URL env var in production (set on Vercel)
+// Falls back to localhost for local development only
 const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
 
 const getHeaders = () => {
